@@ -1,0 +1,10 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.wordWrap": "on",
+    "files.autoSave": "onFocusChange",
+    "workbench.colorTheme": "Monokai",
+    "javascript.validate.enable": false,
+    "flow.useNPMPackagedFlow": true,
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": 0
+}
