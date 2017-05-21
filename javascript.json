@@ -30,6 +30,10 @@
 		"prefix": "eslint-disable-line",
 		"body": "//eslint-disable-line"
 	},
+	"export-default": {
+		"prefix": "export-default",
+		"body": "export default ${1:name}"
+	},
 	"flow": {
 		"prefix": "flow",
 		"body": "// @flow",
@@ -53,9 +57,37 @@
 	"log": {
 		"prefix": "log",
 		"body": [
-			"console.log($1)"
+			"console.log('$1', $2)"
 		],
 		"description": "Do console.log()."
+	},
+	"next-anon-component": {
+		"prefix": "next-anon-component",
+		"body": [
+			"export default (props) => (",
+  			"\u0020 <div>",
+    		"\u0020 \u0020 <p>I am an anonymous component at the '{props.url.pathname}' path.</p>",
+  			"\u0020 </div>",
+			")"
+		]
+	},
+	"next-named-component": {
+		"prefix": "next-named-component",
+		"body": [
+			"const ${1:name} = () => (",
+  			"\u0020 <div>",
+    		"\u0020 \u0020 <p>I am the ${1:name} component.</p>",
+  			"\u0020 </div>",
+			")",
+			"",
+			"export default ${1:name}"
+		]
+	},
+	"sanity-check": {
+	  "prefix": "sanity-check",
+	  "body": [
+		  "console.log('sanity check')"
+	  ]
 	},
 	"set-state": {
 		"prefix": "set-state",
@@ -67,7 +99,7 @@
 	},
 	"then-method": {
 		"prefix": "then-method",
-		"body": "then(($1) => {$2})"
+		"body": ".then(($1) => {$2})"
 	}
 
 }
