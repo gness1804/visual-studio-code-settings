@@ -6,5 +6,5 @@
     "javascript.validate.enable": false,
     "flow.useNPMPackagedFlow": true,
     "workbench.editor.enablePreview": false,
-    "window.zoomLevel": 0
+    "editor.autoClosingBrackets" : false,
 }
