@@ -19,6 +19,14 @@
 		"prefix": "catch-method",
 		"body": "catch(($1) => {$2})"
 	},
+	"data-vue": {
+		"prefix": "data-vue",
+		"body": [
+			"data() {",
+    	"\u0020 return {};",
+			"},"
+		]
+	},
 	"describe-block-testing": {
 		"prefix": "describe-block-testing",
 		"body": [
@@ -51,6 +59,20 @@
 		"prefix": "flow",
 		"body": "// @flow",
 		"description": "The notation for flow."
+	},
+	"for-of": {
+		"prefix": "for-of",
+		"body": [
+			"for (${1:thing} of ${2:things}) {",
+			"",
+			"}"
+		]
+	},
+	"function-es5": {
+		"prefix": "function-es5",
+		"body": [
+			"function () {}"
+		]
 	},
 	"function-es6": {
 		"prefix": "function-es6",
@@ -94,9 +116,9 @@
 	"log": {
 		"prefix": "log",
 		"body": [
-			"console.log('$1', $1)"
+			"console.log('$1:', $1)"
 		],
-		"description": "Do console.log()."
+		"description": "Console.log()."
 	},
 	"next-anon-component": {
 		"prefix": "next-anon-component",
@@ -153,6 +175,17 @@
 			"<style jsx>{`",
 			"",
       "`}</style>"
+		]
+	},
+	"style-vue": {
+		"prefix": "style-vue",
+		"body": [
+			"const styles = {",
+			"$1",
+			"};",
+			"",
+			"export default styles;",
+			""
 		]
 	},
 	"then-method": {
