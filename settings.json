@@ -7,4 +7,7 @@
     "flow.useNPMPackagedFlow": true,
     "workbench.editor.enablePreview": false,
     "editor.autoClosingBrackets" : false,
+    "gitlens.blame.file.annotationType": "gutter",
+    "gitlens.annotations.file.gutter.hover.details" : false,
+    "gitlens.annotations.file.hover.heatmap.enabled": true,
 }
