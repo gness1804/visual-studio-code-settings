@@ -12,7 +12,7 @@
 		"body": [
 			"beforeEach(() => {",
 			"",
-  		"});"
+			"});"
 		]
 	},
 	"catch-method": {
@@ -23,16 +23,16 @@
 		"prefix": "data-vue",
 		"body": [
 			"data() {",
-    	"\u0020 return {};",
+			"\u0020 return {};",
 			"},"
 		]
 	},
 	"describe-block-testing": {
 		"prefix": "describe-block-testing",
 		"body": [
-			 "describe('${1:feature}', () => {",
-       "\u0020 $2",
-   		 "});"
+			"describe('${1:feature}', () => {",
+			"\u0020 $2",
+			"});"
 		]
 	},
 	"eslint-disable": {
@@ -101,8 +101,8 @@
 		"prefix": "it-block-testing",
 		"body": [
 			"it('${1:does such and such}', () => {",
-      "\u0020 $2",
-    	"});"
+			"\u0020 $2",
+			"});"
 		]
 	},
 	"local-storage-get-item": {
@@ -124,9 +124,9 @@
 		"prefix": "next-anon-component",
 		"body": [
 			"export default (props) => (",
-  			"\u0020 <div>",
-    		"\u0020 \u0020 <p>I am an anonymous component at the '{props.url.pathname}' path.</p>",
-  			"\u0020 </div>",
+			"\u0020 <div>",
+			"\u0020 \u0020 <p>I am an anonymous component at the '{props.url.pathname}' path.</p>",
+			"\u0020 </div>",
 			")"
 		]
 	},
@@ -134,9 +134,9 @@
 		"prefix": "next-named-component",
 		"body": [
 			"const ${1:name} = () => (",
-  			"\u0020 <div>",
-    		"\u0020 \u0020 <p>I am the ${1:name} component.</p>",
-  			"\u0020 </div>",
+			"\u0020 <div>",
+			"\u0020 \u0020 <p>I am the ${1:name} component.</p>",
+			"\u0020 </div>",
 			")",
 			"",
 			"export default ${1:name}"
@@ -147,8 +147,8 @@
 		"body": [
 			"const promise = new Promise((resolve, reject) => {",
 			"\u0020 resolve()",
-  		"});",
-  		"promise.then(() => {});"
+			"});",
+			"promise.then(() => {});"
 		]
 	},
 	"prop-same-name": {
@@ -156,10 +156,10 @@
 		"body": "${1:propName}={${1:propName}}"
 	},
 	"sanity-check": {
-	  "prefix": "sanity-check",
-	  "body": [
-		  "console.log('sanity check')"
-	  ]
+		"prefix": "sanity-check",
+		"body": [
+			"console.log('${1:sanity check}')"
+		]
 	},
 	"set-state": {
 		"prefix": "set-state",
@@ -174,7 +174,7 @@
 		"body": [
 			"<style jsx>{`",
 			"",
-      "`}</style>"
+			"`}</style>"
 		]
 	},
 	"style-vue": {
@@ -192,5 +192,4 @@
 		"prefix": "then-method",
 		"body": ".then(($1) => {$2})"
 	}
-
 }
